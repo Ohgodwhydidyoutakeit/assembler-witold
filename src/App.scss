@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+$color1: #0466c8ff;
+$color2: #0353a4ff;
+$color3: #023e7dff;
+$color4: #002855ff;
+$color5: #001845ff;
+$color6: #001233ff;
+$color7: #33415cff;
+$color8: #5c677dff;
+$color9: #7d8597ff;
+$color10: #979dacff;
+body,
+html {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  flex: 1 2 1;
+
+  .nav {
+    display: flex;
+    width: inherit;
+
+    justify-content: space-between;
+    padding: 1em 3em 1em 3em;
+    background-color: $color4;
+    font-size: 1.5em;
+    color: $color10 * 1.5;
+  }
+  .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2em;
+    font-size: 1.4em;
+    div {
+      padding: 0.7em 1em 1em 1em;
+    }
+    label {
+      margin: 0 0.5em 0 0.5em;
+    }
+    button {
+      margin: 0 0.7em 0 2em;
+    }
+    .mov {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      div {
+        padding: 0 0 0 0;
+      }
+      label {
+        margin:0 0 0 0;
+      }
+      button {
+        margin: 0 0.7em 0 0.7em;
+      }
+    }
+    
+  }
+  .registry-view{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    div{
+      padding: 0 1em 0 1em;
+    }
+  }
+  .footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: $color6;
+    color: white;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+  }
+  a{
+    text-decoration: none; 
+    color:white;
+  }
+}
